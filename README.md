@@ -1,3 +1,3 @@
 # OCR-API
 
-### dev-main branch commit test
+### Easy-OCR Based Python OCR API Dev-ing
