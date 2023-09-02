@@ -45,6 +45,7 @@ def outline(image, width, ksize=(5, 5), min_threshold=75, max_threshold=200):
     cv2.drawContours(output, [findCnt], -1, (0, 255, 0), 2)
     transform_image = four_point_transform(image, findCnt.reshape(4, 2) * ratio)
     plt_imshow("Transform", transform_image)
+    cv2.imwrite("../service/output.jpg", transform_image)
     return transform_image
 
 
